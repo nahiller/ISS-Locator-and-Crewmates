@@ -1,0 +1,29 @@
+x canary test
+x get_location returns the time and location that the service returns
+x get_location returns a string "network error: service unreachable" if the service throws an exception
+x get_location returns a string "service failed to respond" if the service throws an exception 
+
+x get_astronauts returns empty list if service returns empty list
+x get_astronauts returns list with one name if service returns a list with one name
+x get_astronauts returns list with two name if service returns a list with two name already in sorted order
+x get_astronauts returns list with two name in sorted order if service returns a list with two name in unsorted order
+x get_astronauts returns a string "network error: service unreachable" if the service throws an exception
+x get_astronauts returns a string "service failed to respond" if the service throws an exception
+
+x get response returns response from the webservice for astronauts names
+x parse response returns astronauts names from the given sample data
+x parse response returns astronauts names from the another sample data
+x get astronauts names calls the above two functions
+x get astronauts names throws an exception if service is unreachable
+x get astronauts names throws an exception if service returns an access error
+
+x get response returns response from the webservice for time and location
+x parse response returns timestamp and location from the given sample data
+x parse response returns timestamp and location from the another sample data
+x get location calls the above two functions
+x get location returns the time in CT instead of the time stamp
+x get location returns the time in CT instead of the time stamp using a different example in which CT is in AM
+x get location also returns the place (city/state) of iss
+x get location returns the place as None using a different example where the coordinates is Indian Ocean
+x get location throws an exception if service is unreachable
+x get location throws an exception if service returns an access error

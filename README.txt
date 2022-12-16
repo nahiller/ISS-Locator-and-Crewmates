@@ -1,0 +1,1 @@
+Type "paver run" in the terminal to execute the program
